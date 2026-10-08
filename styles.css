@@ -655,5 +655,516 @@ h2 em{
   transition:.25s
 }
 
+.brands span:hover{}
+
+/* =========================
+   V3.1 MOBILE / RESPONSIVE
+   ========================= */
+
 .brands span:hover{
+  background:#f4f4f4;
+  transform:translateY(-2px);
+}
+
+.cta{
+  padding:105px 7%;
+  background:#e12b24;
+  color:#fff;
+}
+
+.cta .eyebrow{color:#080808}
+
+.cta h2{max-width:850px}
+
+.cta p:not(.eyebrow){
+  font-size:17px;
+  color:#fff;
+  opacity:.9;
+}
+
+.cta .black{margin-top:22px}
+
+footer{
+  padding:34px 7%;
+  background:#050505;
+  color:#777;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;
+  font-size:11px;
+}
+
+footer .footerbrand img{width:120px}
+
+footer div{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+footer a:hover{color:#fff}
+
+.whatsapp-float{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:60;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#35b85a;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 12px 35px #0008;
+  transition:transform .25s,box-shadow .25s;
+}
+
+.whatsapp-float span{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:#fff;
+  color:#35a956;
+  display:grid;
+  place-items:center;
+  font-size:12px;
+  font-weight:900;
+}
+
+.whatsapp-float b{display:none}
+
+.whatsapp-float:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 16px 40px #000a;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:none;
+}
+
+@media (max-width:1000px){
+  .desktop-nav{gap:15px;font-size:11px}
+  .navcta{padding:9px 12px}
+  .hero{gap:35px;padding-left:5%;padding-right:5%}
+  .section,.results,.coach,.taf,.performance,.tech,.cta{
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
+
+@media (max-width:800px){
+
+  .nav{
+    height:74px;
+    padding:0 18px;
+  }
+
+  .nav.scrolled{height:68px}
+
+  .brand img{
+    width:118px;
+    max-height:52px;
+  }
+
+  .desktop-nav,
+  .navcta{
+    display:none;
+  }
+
+  .nav-actions{
+    margin-left:auto;
+  }
+
+  .menu-toggle{
+    display:grid;
+    place-items:center;
+    width:46px;
+    height:46px;
+    border-radius:12px;
+    background:#101010;
+    border-color:#444;
+    font-size:22px;
+    position:relative;
+    z-index:72;
+  }
+
+  .mobile-menu{
+    display:flex;
+    position:fixed;
+    inset:0;
+    z-index:70;
+    background:rgba(8,8,8,.98);
+    padding:110px 28px 35px;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:4px;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-12px);
+    transition:opacity .25s ease,transform .25s ease,visibility .25s;
+  }
+
+  .mobile-menu.open{
+    opacity:1;
+    visibility:visible;
+    transform:none;
+  }
+
+  .mobile-menu a{
+    display:flex;
+    align-items:center;
+    min-height:58px;
+    padding:0 4px;
+    border-bottom:1px solid #252525;
+    color:#ddd;
+    font-size:20px;
+    font-weight:700;
+  }
+
+  .mobile-menu .mobile-wa{
+    margin-top:22px;
+    min-height:54px;
+    justify-content:center;
+    border:1px solid var(--red);
+    background:var(--red);
+    color:#fff;
+    font-size:13px;
+    letter-spacing:1px;
+  }
+
+  .hero{
+    width:100%;
+    min-height:auto;
+    padding:62px 20px 48px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:30px;
+  }
+
+  .hero-copy{width:100%}
+
+  .hero h1{
+    font-size:clamp(50px,14vw,72px);
+    line-height:.88;
+    letter-spacing:-1px;
+    margin:16px 0 20px;
+  }
+
+  .lead{
+    font-size:17px;
+    line-height:1.65;
+  }
+
+  .actions{
+    flex-direction:column;
+    align-items:stretch;
+    margin-top:24px;
+  }
+
+  .btn{
+    width:100%;
+    min-height:54px;
+    padding:15px 18px;
+  }
+
+  .hero-proof{
+    margin-top:22px;
+    font-size:9px;
+    line-height:1.8;
+  }
+
+  .hero-photo{
+    width:100%;
+    height:470px;
+  }
+
+  .hero-photo-label{
+    left:18px;
+    right:18px;
+    bottom:18px;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .ticker{
+    padding:16px 18px;
+    font-size:9px;
+  }
+
+  .section,
+  .results,
+  .tech,
+  .cta{
+    padding:72px 20px;
+    width:100%;
+  }
+
+  .section h2,
+  .results h2,
+  .tech h2,
+  .cta h2{
+    font-size:clamp(46px,13vw,66px);
+    line-height:.9;
+    margin:14px 0 22px;
+  }
+
+  .section-intro{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .steps,
+  .grid,
+  .stats{
+    grid-template-columns:1fr 1fr;
+    margin-top:35px;
+  }
+
+  .steps article,
+  .grid article{
+    min-height:205px;
+    padding:24px 18px;
+  }
+
+  .steps h3,
+  .grid h3{
+    font-size:17px;
+    line-height:1.15;
+    margin-top:20px;
+  }
+
+  .steps p,
+  .grid p{
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  .performance{
+    width:100%;
+    padding:72px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    align-items:stretch;
+  }
+
+  .performance h2{
+    font-size:clamp(46px,13vw,66px);
+  }
+
+  .zones{
+    width:100%;
+  }
+
+  .zones div{
+    padding:24px 18px;
+  }
+
+  .zones b{
+    font-size:48px;
+  }
+
+  .taf{
+    width:100%;
+    padding:72px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    align-items:stretch;
+  }
+
+  .taf h2{
+    font-size:clamp(46px,13vw,66px);
+  }
+
+  .tafbox{
+    width:100%;
+    height:250px;
+  }
+
+  .tafbox b{
+    font-size:90px;
+  }
+
+  .stats{
+    grid-template-columns:1fr 1fr;
+    margin:35px 0;
+  }
+
+  .stats div{
+    padding:22px 16px;
+  }
+
+  .stats strong{
+    font-size:42px;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:220px 160px;
+    gap:8px;
+  }
+
+  .gallery .featured{
+    grid-row:1/3;
+  }
+
+  .gallery figcaption{
+    padding:10px;
+    font-size:8px;
+  }
+
+  .coach{
+    width:100%;
+    padding:72px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    align-items:stretch;
+  }
+
+  .coach-photo{
+    width:100%;
+    height:430px;
+  }
+
+  .coach-copy h2{
+    font-size:clamp(46px,13vw,66px);
+  }
+
+  .story{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .story-image{
+    min-height:380px;
+    height:380px;
+  }
+
+  .story>div:last-child{
+    padding:65px 20px;
+  }
+
+  .story h2{
+    font-size:clamp(46px,13vw,66px);
+  }
+
+  .brands{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    margin-top:32px;
+  }
+
+  .brands span{
+    min-width:0;
+    padding:16px 10px;
+    font-size:10px;
+  }
+
+  .cta h2{
+    font-size:clamp(50px,14vw,72px);
+  }
+
+  footer{
+    padding:30px 20px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  footer div{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .whatsapp-float{
+    right:18px;
+    bottom:18px;
+    width:58px;
+    height:58px;
+  }
+}
+
+@media (max-width:420px){
+
+  .nav{padding:0 14px}
+
+  .brand img{width:108px}
+
+  .hero{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .section,
+  .results,
+  .tech,
+  .cta,
+  .taf,
+  .performance,
+  .coach{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .steps,
+  .grid,
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .steps article,
+  .grid article{
+    min-height:auto;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+    grid-template-rows:300px 190px 190px;
+  }
+
+  .gallery .featured{
+    grid-row:auto;
+  }
+
+  .hero-photo{
+    height:430px;
+  }
+
+  .zones b{
+    font-size:42px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+
+  html{scroll-behavior:auto}
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+
+  .reveal{
+    opacity:1;
+    transform:none;
+  }
+}
  
