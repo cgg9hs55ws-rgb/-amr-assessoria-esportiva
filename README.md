@@ -1,15 +1,15 @@
-# AMR Assessoria Esportiva
+# AMR Assessoria Esportiva — versão 2
 
-Site estático pronto para GitHub Pages.
+Site institucional com identidade AMR, logo oficial e fotos do treinador.
 
-## Publicar
-1. Envie o conteúdo deste ZIP para o repositório `cgg9hs55ws-rgb/-amr-assessoria-esportiva`.
-2. Abra **Settings → Pages**.
-3. Em **Build and deployment**, selecione **Deploy from a branch**.
-4. Branch `main` e pasta `/ (root)`.
-5. Salve e aguarde a publicação.
+## Publicação
+Substitua os arquivos da versão anterior no repositório `cgg9hs55ws-rgb/-amr-assessoria-esportiva`:
+- index.html
+- styles.css
+- script.js
+- assets/
 
-URL esperada depois da ativação:
-https://cgg9hs55ws-rgb.github.io/-amr-assessoria-esportiva/
+A configuração do GitHub Pages pode permanecer em `main` + `/(root)`.
 
-A pasta `assets/` está reservada para logo e fotos oficiais.
+## Imagens
+As fotos estão em `assets/` e já são referenciadas pelo `index.html`.
