@@ -1,82 +1,128 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="AMR Assessoria Esportiva — treinamento personalizado para corrida, performance e TAF.">
+<meta name="theme-color" content="#080808">
 <title>AMR Assessoria Esportiva | Treine com propósito</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="nav">
-<a class="brand" href="#inicio"><img src="logo-amr.png" alt="AMR Assessoria Esportiva"></a>
-<nav><a href="#metodo">Método</a><a href="#servicos">Serviços</a><a href="#taf">TAF</a><a href="#treinador">Treinador</a></nav>
-<a class="navcta" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">Fale conosco</a>
+<header class="nav" id="topo">
+  <a class="brand" href="#inicio" aria-label="AMR Assessoria Esportiva"><img src="logo-amr.png" alt="AMR Assessoria Esportiva"></a>
+  <nav class="desktop-nav" aria-label="Navegação principal">
+    <a href="#metodo">Método</a><a href="#servicos">Serviços</a><a href="#performance">Performance</a><a href="#taf">TAF</a><a href="#treinador">Treinador</a><a href="#contato">Contato</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="navcta" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">Fale conosco</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#metodo">Método</a><a href="#servicos">Serviços</a><a href="#performance">Performance</a><a href="#taf">TAF</a><a href="#treinador">Treinador</a><a href="#contato">Contato</a>
+    <a class="mobile-wa" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">WHATSAPP</a>
+  </div>
 </header>
 
 <main id="inicio">
 <section class="hero">
-<div class="hero-copy">
-<p class="eyebrow">AMR ASSESSORIA ESPORTIVA • ONLINE E PRESENCIAL</p>
-<h1>Treine com propósito.<br><em>Corra com estratégia.</em></h1>
-<p class="lead">Treinamento individualizado para quem busca saúde, evolução e alta performance — dos 3 km aos 42 km.</p>
-<div class="actions"><a class="btn red" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">QUERO TREINAR COM A AMR</a><a class="btn outline" href="#servicos">Conheça a metodologia</a></div>
-</div>
-<div class="hero-photo"><img src="treinador-noite.jpg" alt="Treinador da AMR correndo à noite"><div class="hero-photo-label"><b>PERFORMANCE</b><span>DISCIPLINA • CONSTÂNCIA • ESTRATÉGIA</span></div></div>
+  <div class="hero-copy reveal">
+    <p class="eyebrow">AMR ASSESSORIA ESPORTIVA • ONLINE E PRESENCIAL</p>
+    <h1>Treine com propósito.<br><em>Corra com estratégia.</em></h1>
+    <p class="lead">Treinamento individualizado para quem busca saúde, evolução e alta performance — dos 3 km aos 42 km.</p>
+    <div class="actions">
+      <a class="btn red" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">QUERO TREINAR COM A AMR</a>
+      <a class="btn outline" href="#metodo">Conheça a metodologia</a>
+    </div>
+    <div class="hero-proof"><span>3–42 KM</span><span>•</span><span>TAF</span><span>•</span><span>FORÇA ESPECÍFICA</span></div>
+  </div>
+  <div class="hero-photo reveal">
+    <img src="treinador-noite.jpg" alt="Treinador da AMR correndo à noite">
+    <div class="hero-photo-label"><b>PERFORMANCE</b><span>DISCIPLINA • CONSTÂNCIA • ESTRATÉGIA</span></div>
+  </div>
 </section>
 
 <div class="ticker">INDIVIDUALIZAÇÃO　•　ZONAS DE TREINAMENTO　•　PERFORMANCE　•　TAF　•　FORÇA ESPECÍFICA</div>
 
 <section id="metodo" class="section light">
-<p class="eyebrow">COMO TRABALHAMOS</p><h2>Planejamento que transforma <em>treino em resultado.</em></h2>
-<div class="steps">
-<article><b>01</b><h3>Avaliação</h3><p>Entendemos seu nível, objetivo, rotina e histórico.</p></article>
-<article><b>02</b><h3>Planejamento</h3><p>Treinos estruturados a partir das suas zonas e metas.</p></article>
-<article><b>03</b><h3>Execução</h3><p>Treinos enviados pelo aplicativo, com orientação clara.</p></article>
-<article><b>04</b><h3>Acompanhamento</h3><p>Análise da evolução e ajustes para manter consistência.</p></article>
-</div></section>
+  <div class="section-head reveal"><p class="eyebrow">COMO TRABALHAMOS</p><h2>Planejamento que transforma <em>treino em resultado.</em></h2><p class="section-intro">Cada atleta começa de um ponto diferente. Por isso, o processo da AMR combina avaliação, planejamento, execução e acompanhamento contínuo.</p></div>
+  <div class="steps">
+    <article class="reveal"><b>01</b><h3>Avaliação</h3><p>Entendemos seu nível, objetivo, rotina e histórico.</p></article>
+    <article class="reveal"><b>02</b><h3>Planejamento</h3><p>Treinos estruturados a partir das suas zonas e metas.</p></article>
+    <article class="reveal"><b>03</b><h3>Execução</h3><p>Treinos enviados pelo aplicativo, com orientação clara.</p></article>
+    <article class="reveal"><b>04</b><h3>Acompanhamento</h3><p>Análise da evolução e ajustes para manter consistência.</p></article>
+  </div>
+</section>
 
 <section id="servicos" class="section dark">
-<p class="eyebrow">SERVIÇOS</p><h2>Treinamento feito para <em>você.</em></h2>
-<div class="grid">
-<article><b>01</b><h3>Planilha individualizada</h3><p>Periodização de acordo com seu objetivo, disponibilidade e nível.</p></article>
-<article><b>02</b><h3>Treinos por zonas</h3><p>Intensidades para resistência, ritmo, velocidade e potência.</p></article>
-<article><b>03</b><h3>Força para corrida</h3><p>Fortalecimento específico para melhorar desempenho.</p></article>
-<article><b>04</b><h3>Online e presencial</h3><p>Acompanhamento adaptado à sua rotina.</p></article>
-<article><b>05</b><h3>3 km a 42 km</h3><p>Preparação para diferentes distâncias e desafios.</p></article>
-<article class="highlight"><b>06</b><h3>Preparação para TAF</h3><p>Concursos, CTSP Brigada Militar e cursos operacionais.</p></article>
-</div></section>
+  <div class="section-head reveal"><p class="eyebrow">SERVIÇOS</p><h2>Treinamento feito para <em>você.</em></h2><p class="section-intro">Da saúde à alta performance, o treinamento é organizado de acordo com o objetivo e a realidade de cada atleta.</p></div>
+  <div class="grid">
+    <article class="reveal"><b>01</b><h3>Planilha individualizada</h3><p>Periodização de acordo com seu objetivo, disponibilidade e nível.</p></article>
+    <article class="reveal"><b>02</b><h3>Treinos por zonas</h3><p>Intensidades para resistência, ritmo, velocidade e potência.</p></article>
+    <article class="reveal"><b>03</b><h3>Força para corrida</h3><p>Fortalecimento específico para melhorar desempenho e suporte ao treino.</p></article>
+    <article class="reveal"><b>04</b><h3>Online e presencial</h3><p>Acompanhamento adaptado à sua rotina.</p></article>
+    <article class="reveal"><b>05</b><h3>3 km a 42 km</h3><p>Preparação para diferentes distâncias e desafios.</p></article>
+    <article class="highlight reveal"><b>06</b><h3>Preparação para TAF</h3><p>Concursos, CTSP Brigada Militar e cursos operacionais.</p></article>
+  </div>
+</section>
 
-<section class="performance">
-<div><p class="eyebrow">PERFORMANCE</p><h2>Mais do que correr.<br><em>Treinar certo.</em></h2><p>Fartlek, intervalados, ritmados, longões, velocidade, resistência e força — cada estímulo tem uma função dentro do planejamento.</p></div>
-<div class="zones"><div><b>Z1</b><span>RECUPERAÇÃO</span></div><div><b>Z2</b><span>RESISTÊNCIA</span></div><div><b>Z3</b><span>RITMO</span></div><div><b>Z4</b><span>ALTA INTENSIDADE</span></div></div>
+<section id="performance" class="performance">
+  <div class="reveal"><p class="eyebrow">PERFORMANCE</p><h2>Mais do que correr.<br><em>Treinar certo.</em></h2><p>Fartlek, intervalados, ritmados, longões, velocidade, resistência e força — cada estímulo tem uma função dentro do planejamento.</p></div>
+  <div class="zones reveal">
+    <div><b>Z1</b><span>RECUPERAÇÃO</span></div><div><b>Z2</b><span>RESISTÊNCIA</span></div><div><b>Z3</b><span>RITMO</span></div><div><b>Z4</b><span>ALTA INTENSIDADE</span></div>
+  </div>
 </section>
 
 <section id="taf" class="taf">
-<div><p class="eyebrow">TAF • CONCURSOS • CURSOS OPERACIONAIS</p><h2>Prepare-se para<br><em>a aprovação.</em></h2><p>Estratégia e especificidade para as demandas físicas do seu teste, com foco em corrida e condicionamento.</p><a class="btn red" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">FALAR SOBRE O TAF</a></div>
-<div class="tafbox"><b>TAF</b><small>DISCIPLINA<br>PREPARAÇÃO<br>RESULTADO</small></div>
+  <div class="reveal"><p class="eyebrow">TAF • CONCURSOS • CURSOS OPERACIONAIS</p><h2>Prepare-se para<br><em>a aprovação.</em></h2><p>Estratégia e especificidade para as demandas físicas do seu teste, com foco em corrida e condicionamento.</p><a class="btn red" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">FALAR SOBRE O TAF</a></div>
+  <div class="tafbox reveal"><b>TAF</b><small>DISCIPLINA<br>PREPARAÇÃO<br>RESULTADO</small></div>
 </section>
 
-<section id="treinador" class="section coach">
-<div class="coach-copy"><p class="eyebrow">O TREINADOR</p><h2>Experiência que vai <em>para a pista.</em></h2><p>Treinamento orientado por método, experiência prática e acompanhamento. O objetivo é transformar cada sessão em evolução.</p><a class="btn red" href="https://instagram.com/ander.rodrigues_" target="_blank" rel="noopener">VER INSTAGRAM</a></div>
-<div class="gallery">
-<figure class="featured"><img src="treinador-podio.jpg" alt="Treinador no pódio em corrida"><figcaption>RESULTADO • EXPERIÊNCIA • PERFORMANCE</figcaption></figure>
-<figure><img src="treinador-corrida.jpg" alt="Treinador correndo"><figcaption>CONSISTÊNCIA</figcaption></figure>
-<figure><img src="treino-grupo.jpg" alt="Treinador correndo em prova"><figcaption>NA PISTA</figcaption></figure>
-</div>
+<section class="results dark">
+  <div class="section-head reveal"><p class="eyebrow">AMR NA PRÁTICA</p><h2>Resultado se constrói <em>na rotina.</em></h2><p class="section-intro">Treinos, provas, experiências e evolução fazem parte do caminho.</p></div>
+  <div class="stats reveal">
+    <div><strong>3–42</strong><span>KM DE PREPARAÇÃO</span></div>
+    <div><strong>4</strong><span>ETAPAS DO MÉTODO</span></div>
+    <div><strong>6</strong><span>INTEGRAÇÕES</span></div>
+    <div><strong>TAF</strong><span>PREPARAÇÃO ESPECÍFICA</span></div>
+  </div>
+  <div class="gallery results-gallery">
+    <figure class="featured reveal"><img src="treinador-podio.jpg" alt="Atletas e treinador em pódio de corrida"><figcaption>RESULTADO • EXPERIÊNCIA • PERFORMANCE</figcaption></figure>
+    <figure class="reveal"><img src="treinador-corrida.jpg" alt="Treinador correndo"><figcaption>CONSISTÊNCIA</figcaption></figure>
+    <figure class="reveal"><img src="treino-grupo.jpg" alt="Grupo de corredores em prova"><figcaption>NA PISTA</figcaption></figure>
+  </div>
+</section>
+
+<section id="treinador" class="coach">
+  <div class="coach-photo reveal"><img src="treinador-corrida.jpg" alt="Anderson Rodrigues, treinador da AMR, correndo"></div>
+  <div class="coach-copy reveal"><p class="eyebrow">O TREINADOR</p><h2>Experiência que vai <em>para a pista.</em></h2><h3>Anderson Rodrigues</h3><p>Treinador, corredor e responsável pela AMR Assessoria Esportiva. Um trabalho baseado em método, experiência prática, acompanhamento e estratégia para transformar cada sessão em evolução.</p><p class="coach-quote">“Treinar com propósito é saber por que cada treino está sendo feito.”</p><div class="actions"><a class="btn red" href="https://instagram.com/ander.rodrigues_" target="_blank" rel="noopener">VER INSTAGRAM</a><a class="btn outline" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">FALAR COM O TREINADOR</a></div></div>
 </section>
 
 <section class="story">
-<div class="story-image"><img src="treinador-noite.jpg" alt="Treinador correndo à noite"></div>
-<div><p class="eyebrow">AMR NA PRÁTICA</p><h2>Disciplina para <em>evoluir.</em></h2><p>Do primeiro treino à linha de chegada: estratégia, constância e acompanhamento para construir resultados sustentáveis.</p></div>
+  <div class="story-image reveal"><img src="treinador-noite.jpg" alt="Treinador da AMR correndo à noite"></div>
+  <div class="reveal"><p class="eyebrow">AMR NA PRÁTICA</p><h2>Disciplina para <em>evoluir.</em></h2><p>Do primeiro treino à linha de chegada: estratégia, constância e acompanhamento para construir resultados sustentáveis.</p></div>
 </section>
 
-<section class="tech"><p class="eyebrow">CONECTE SEUS TREINOS</p><h2>Seus dados. <em>Mais controle.</em></h2><div class="brands">STRAVA　 GARMIN　 POLAR　 COROS　 APPLE　 AMAZFIT</div></section>
+<section class="tech">
+  <div class="section-head reveal"><p class="eyebrow">CONECTE SEUS TREINOS</p><h2>Seus dados. <em>Mais controle.</em></h2><p class="section-intro">Acompanhe seus treinos com as principais plataformas e dispositivos.</p></div>
+  <div class="brands reveal"><span>STRAVA</span><span>GARMIN</span><span>POLAR</span><span>COROS</span><span>APPLE</span><span>AMAZFIT</span></div>
+</section>
 
-<section class="cta"><p class="eyebrow">PRONTO PARA COMEÇAR?</p><h2>Seu próximo resultado<br>começa <em>hoje.</em></h2><a class="btn black" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">QUERO TREINAR COM A AMR</a></section>
+<section id="contato" class="cta">
+  <div class="reveal"><p class="eyebrow">PRONTO PARA COMEÇAR?</p><h2>Seu próximo resultado<br>começa <em>hoje.</em></h2><p>Escolha seu objetivo. A AMR cuida da estratégia.</p><a class="btn black" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">QUERO TREINAR COM A AMR</a></div>
+</section>
 </main>
 
-<footer><a class="brand footerbrand" href="#inicio"><img src="logo-amr.png" alt="AMR Assessoria Esportiva"></a><span>© 2026 AMR Assessoria Esportiva</span><a href="https://instagram.com/ander.rodrigues_" target="_blank" rel="noopener">@ander.rodrigues_</a></footer>
+<a class="whatsapp-float" href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener" aria-label="Falar com a AMR pelo WhatsApp"><span>WA</span><b>WhatsApp</b></a>
+
+<footer>
+  <a class="brand footerbrand" href="#inicio"><img src="logo-amr.png" alt="AMR Assessoria Esportiva"></a>
+  <div><span>© 2026 AMR Assessoria Esportiva</span><a href="https://instagram.com/ander.rodrigues_" target="_blank" rel="noopener">@ander.rodrigues_</a></div>
+  <a href="https://wa.me/5551989959848?s=p" target="_blank" rel="noopener">WhatsApp</a>
+</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
