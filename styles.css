@@ -811,7 +811,7 @@ footer a:hover{color:#fff}
   width:100%;
   height:calc(100dvh - 74px);
   z-index:70;
-  background:rgba(8,8,8,.99);
+  background:#080808;
   padding:28px 28px calc(35px + env(safe-area-inset-bottom));
   flex-direction:column;
   justify-content:flex-start;
